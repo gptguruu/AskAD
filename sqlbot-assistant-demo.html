@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AskAD</title>
+
+    <style>
+      /* Global Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", "Microsoft YaHei", sans-serif;
+      }
+
+      /* Scrollbar Styles */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+        background-color: transparent;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 107, 107, 0.5);
+        border-radius: 4px;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      :hover::-webkit-scrollbar-thumb,
+      :focus::-webkit-scrollbar-thumb,
+      :active::-webkit-scrollbar-thumb {
+        opacity: 1;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #ff6b6b;
+      }
+
+      body {
+        color: #333;
+        line-height: 1.6;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(255, 107, 107, 0.5) transparent;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+
+      /* Navigation Bar */
+      header {
+        background-color: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #ff6b6b;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+      }
+
+      .nav-links li {
+        margin-left: 30px;
+      }
+
+      .nav-links a:hover {
+        color: #ff6b6b;
+      }
+
+      .mobile-menu {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+        color: white;
+        padding: 80px 0;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        font-size: 20px;
+        max-width: 700px;
+        margin: 0 auto 30px;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: #ff6b6b;
+        color: white;
+        padding: 12px 30px;
+        border-radius: 30px;
+        font-weight: bold;
+        transition: all 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #ff5252;
+        transform: translateY(-3px);
+      }
+
+      /* Features */
+      .features {
+        padding: 80px 0;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .section-title h2 {
+        font-size: 36px;
+        color: #333;
+      }
+
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+      }
+
+      .feature-card {
+        background-color: white;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        text-align: center;
+        transition: transform 0.3s;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .feature-icon {
+        font-size: 50px;
+        color: #ff6b6b;
+        margin-bottom: 20px;
+      }
+
+      /* Products */
+      .products {
+        padding: 80px 0;
+        background-color: #f9f9f9;
+      }
+
+      .product-info h3 {
+        margin-bottom: 10px;
+      }
+
+      .price {
+        color: #ff6b6b;
+        font-weight: bold;
+        font-size: 18px;
+        margin: 15px 0;
+      }
+
+      /* Testimonials */
+      .testimonials {
+        padding: 80px 0;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 60px 0 20px;
+      }
+
+      .copyright {
+        text-align: center;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 14px;
+      }
+    </style>
+
+    <script
+      async
+      defer
+      id="sqlbot-assistant-float-script-7356228649239973888"
+      src="https://sqlbot.fit2cloud.cn/assistant.js?id=7356228649239973888">
+    </script>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="#" class="logo">YouGou E-commerce</a>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product Categories</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="mobile-menu">☰</div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Features -->
+    <section class="features">
+      <div class="container">
+        <div class="section-title">
+          <h2>Why Choose Us</h2>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🚚</div>
+            <h3>Fast Delivery</h3>
+            <p>Next-day delivery in 300+ cities, same-day delivery in select areas</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Authenticity Guaranteed</h3>
+            <p>100% genuine products with a tenfold compensation for counterfeits</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">💯</div>
+            <h3>Worry-Free After Sales</h3>
+            <p>7-day no-reason returns with 24/7 professional customer support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="copyright">
+          <p>Arnav Desai</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
