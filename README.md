@@ -22,8 +22,6 @@ Supports custom prompts, terminology libraries, and SQL example calibration for 
 
 Access Information
 
-Open in browser: http://<your-server-ip>:8000/
-
 Username: admin
 
 Password: AskAD@123456
